@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fondo1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Lato";
+    
+}
+a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* HEADER */
+header{
+
+    background-image: url('../img/fondo_header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-end;  
+}
+header .nom_sitio {
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro de su contenedor */
+    top: 4rem; /* Coloca el elemento a 4rem desde la parte superior del contenedor */
+    left: 50%; /* Coloca el elemento en el centro horizontal del contenedor */
+    transform: translateX(-50%); /* Ajusta la posición horizontal del elemento para que esté perfectamente centrado */
+}
+header .logo {
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro de su contenedor */
+    top: 1rem; 
+    left: 1rem; 
+    transform:none;
+}
+header .logo img {
+    max-width: 150px; /* Ajusta el ancho máximo según necesidades */
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+h1 {
+    text-align: center;
+    background-color: #eac997;
+    text-shadow: 2px 2px 4px #06f5fd;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin-top: 2rem; /* Añade un margen superior de 2rem para separar el nav del contenido superior */
+    margin-left: 1rem; /* Añade un margen izquierdo de 1rem */
+    display: flex; /* Dispone los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+    gap: 1rem; /* Añade un espaciado de 1rem entre los elementos del nav */
+}
+.nav-container {
+    background-color: #FFEC5C; /* Fondo del rectángulo que abarca las etiquetas */
+    padding: 0.2rem; /* Espaciado interior del contenedor */
+    display: flexbox; /* Usar flexbox para disposición de los elementos */
+    gap: 1rem; /* Añadir espaciado entre los elementos del nav */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 20px 4px cyan; /* Sombra cian pronunciada */
+    justify-content:space-around;
+}
+nav a {
+    font-size: 2rem;
+    color: #fc12c1;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 700;
+    width: 5rem;
+    padding: .5rem 1rem;
+    transition: .3s;
+    /* Transition y transformation = animations*/
+}
+nav a:hover{
+    color:#0fe1f0;
+}
+/* Main */
+main {
+    max-width: 120rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+h2{
+    text-transform: uppercase;
+    margin: 1.9rem;
+    font-weight: 700;
+    color: #080808;
+    background-color: #f67214;
+    width: 50rem;
+    text-align:center;
+    padding: .5rem;
+    letter-spacing: .1rem;
+    font-family:"Lato";
+    text-shadow: 2px 2px 4px white;
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+ .container-flex {
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 2rem;
+    max-width: 100%;
+    padding: 1.2rem;
+    transition: all .6s; /* junto con el container-flex hover le da una animación a las imágenes 
+                            cada vez que pasamos el mouse por ellas */
+}
+.container-flex img {
+
+    flex: 1 1 calc(25% - 2rem); /* Flexibilidad y tamaño calculado para ajustar con el gap */
+    max-width: calc(25% - 2rem); /* Asegura que las imágenes no excedan el contenedor y considera el gap */
+    border-radius: 1.2rem;
+    transition: transform 0.6s;
+}
+.container-flex img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Reseñas */
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  /* Estilo para el contenedor general de las reseñas */
+  .resenias-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    
+  }
+  
+  .resenias-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Grid para las cards */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    
+  }
+  
+  /* Estilo de cada card */
+  .card {
+    background: linear-gradient(135deg, #e0b3ff, #ff66cc);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 10px 4px cyan; /* Sombra cian pronunciada */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #4a148c;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  /* PRODUCTOS */
+
+.pets-container-flex img {
+    flex: 1 1 calc(100% - 2rem); /* Aumenta el tamaño de las imágenes */
+    max-width: calc(100% - 2rem); /* Ajusta el tamaño máximo para que las imágenes sean más grandes */
+    border-radius: 1.2rem;
+    transition: transform 0.6s;
+}
+.container-flex .producto {
+    max-width: 35rem;
+    background-color: #f85fdc;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    transition: all .6s;
+    
+}
+.container-flex .producto:hover{
+    transform: scale(1.1);
+}
+.producto .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.producto .info h3 {
+    margin: 1 rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.producto .info p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.producto .info a {
+    background-color: #0665ea;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    color:#ffffff;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+.producto .info a:hover {
+    background-color: #0a1572;
+    color: #ffffff;
+
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+/* CONTACTO */
+.contact-image-container {
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: fit-content;
+    text-align: center;
+    padding: 2rem 0; /* Espacio alrededor de la imagen*/
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+}
+/*Formulario Formspree */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  color: inherit;
+  border: none;
+  border-radius: 1.5rem;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ /*-webkit-appearance: none;
+  -moz-appearance: none;*/
+}
+#fs-frm label,
+#fs-frm legend {
+  font-size: 2rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
+  color: #e5db17;
+  text-shadow: 2.5px 2.5px 4px #0c0c0c;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+#fs-frm ::placeholder {
+    color: #69696e;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+  }
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 2px solid #83087533;
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: #e7c0e1;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* FOOTER */
+footer {
+    background-image: url('../img/fondo_header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Responsividad */
+
+@media (max-width: 768px) {
+    iframe {
+        width: 95%; /* Reduce ligeramente el ancho en pantallas más pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+body {
+    background-image: url('../img/fondo1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Lato";
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.contact-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0; /* Ajuste de padding para móviles */
+}
+
+.contact-image {
+    width: 100%; /* Ajusta la imagen para que ocupe el 100% del ancho del contenedor */
+    max-width: 700px; /* Reducir el máximo ancho de la imagen */
+    height: auto;
+}
+.resenias-container h1 {
+      font-size: 1.5rem;
+}
+  
+.card {
+      padding: 15px;
+}
+  
+  @media (max-width: 480px) {
+    .resenias-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .card h3 {
+      font-size: 1rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
+  
